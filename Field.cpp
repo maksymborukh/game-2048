@@ -133,8 +133,7 @@ void Field::setElField(int h, int w, char n)
 
 int Field::getElMatr(int h, int w)
 {
-	int t = matrix[h][w];
-	return t;
+	return matrix[h][w];
 }
 
 int Field::getHeight()

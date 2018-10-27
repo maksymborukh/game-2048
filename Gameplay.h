@@ -1,14 +1,21 @@
 #pragma once
 #ifndef GAMEPLAY_H
 #define GAMEPLAY_H
+
 #include "Field.h"
+
 class Gameplay
 {
 private:
-	Field *f = new Field(4, 4);
-public: //must be protected
-	void addEl();
+	Field * f;
+public:
+	Gameplay();
+	Gameplay(int, int);
 	~Gameplay();
+
+	void play();
+	void addEl();
+	bool lose();
 };
 
 #endif // !GAMEPLAY_H

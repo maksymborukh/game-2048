@@ -1,12 +1,13 @@
 #include <iostream>
-#include "Field.h"
-#include "GamePlay.h"
+#include "Menu.h"
+
 using namespace std;
 
 int main()
 {
-	Gameplay g;
-	g.addEl();
+	Menu *game = new Menu;
+	game->showMenu();
+	delete game;
 	system("pause");
 	return 0;
 }
