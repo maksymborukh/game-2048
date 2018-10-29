@@ -16,6 +16,8 @@ public:
 	void play();
 	void addEl();
 	bool lose();
+	bool add(int);
+	void writeChange();
 };
 
 #endif // !GAMEPLAY_H
